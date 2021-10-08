@@ -1,0 +1,72 @@
+.navbar {
+  background-color: $cod-gray;
+  height: $height-navbar;
+
+  &__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+
+    > .nav__link {
+      display: block;
+      > .logo {
+        width: 22.6rem;
+        height: 2.6rem;
+      }
+    }
+
+    > .main__menu {
+      display: flex;
+      align-items: center;
+
+      .menu__left {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 1px;
+          background-color: $cloud;
+          transform: translateX(50%);
+        }
+
+        > a {
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          color: $white-color;
+          padding-right: 7.6rem;
+          text-decoration: none;
+
+          &:hover {
+            color: $cloud;
+          }
+        }
+      }
+
+      .menu__right {
+        display: flex;
+        align-items: center;
+
+        > a {
+          font-size: 1.4rem;
+          padding-left: 7.6rem;
+          text-transform: uppercase;
+          color: $white-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $cloud;
+          }
+        }
+      }
+    }
+  }
+}
