@@ -1,0 +1,115 @@
+.footer {
+  padding: 10rem 0 0;
+  overflow-x: hidden;
+  .footer__top {
+    padding: 4rem 0 8rem;
+    border-top: 1px solid $wild-sand;
+
+    .top__left {
+      margin-bottom: 2.4rem;
+      > h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.4;
+        color: $cod-gray;
+        margin-bottom: 2rem;
+      }
+
+      > div > a {
+        font-size: 1.4rem;
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        font-weight: 300;
+        line-height: 2;
+        color: $cod-gray;
+
+        &:hover {
+          color: $science-blue;
+        }
+      }
+    }
+
+    .top__right {
+      .right__item {
+        margin-top: 2.4rem;
+        > h4 {
+          font-size: 1.4rem;
+          line-height: 1.4;
+          color: $cod-gray;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+
+        > div > a {
+          font-size: 1.2rem;
+          font-weight: 500;
+          display: block;
+          width: fit-content;
+          text-decoration: none;
+          line-height: 2;
+          color: $cod-gray;
+
+          &:hover {
+            color: $science-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    padding: 4rem 0 8rem;
+    border-top: 1px solid $wild-sand;
+
+    .bottom__left {
+      margin-bottom: 2.4rem;
+      > p {
+        font-size: 1.4rem;
+        color: $silver-chalice;
+        line-height: 2.14;
+      }
+    }
+
+    .bottom__right {
+      display: flex;
+      justify-content: flex-end;
+      > div {
+        display: flex;
+        align-items: center;
+
+        > a {
+          text-decoration: none;
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .footer__top {
+      > .grid.wide {
+        max-width: 1200px;
+      }
+    }
+
+    .footer__bottom {
+      > .grid.wide {
+        max-width: 1200px;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .footer__top {
+      padding-bottom: 4rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+
+    .footer__bottom {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+  }
+}

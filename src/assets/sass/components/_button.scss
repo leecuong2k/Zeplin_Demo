@@ -1,0 +1,21 @@
+.btn {
+  width: 199px;
+  height: 60px;
+  font-size: 23px;
+  font-weight: 800;
+  color: $mine-shaft;
+  text-transform: uppercase;
+  line-height: 1.09;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: solid 3px $diesel;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $cod-gray;
+    color: $white-color;
+    border-color: transparent;
+  }
+}

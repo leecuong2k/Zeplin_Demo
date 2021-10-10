@@ -1,6 +1,11 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: $cod-gray;
   height: $height-navbar;
+  z-index: 1000;
 
   &__content {
     height: 100%;
@@ -12,14 +17,30 @@
     > .nav__link {
       display: block;
       > .logo {
-        width: 22.6rem;
-        height: 2.6rem;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
     }
 
     > .main__menu {
       display: flex;
       align-items: center;
+
+      > button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        display: none;
+
+        svg {
+          font-size: 2.5rem;
+          color: $white-color;
+        }
+      }
 
       .menu__left {
         display: flex;
@@ -67,6 +88,98 @@
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    &__content {
+      padding: 0 5rem;
+
+      > .main__menu {
+        .menu__left > a {
+          padding-right: 5rem;
+        }
+
+        .menu__right > a {
+          padding-left: 5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1140px) {
+    &__content {
+      padding: 0 5rem;
+
+      > .nav__link {
+        > .logo {
+          width: 70%;
+        }
+      }
+
+      > .main__menu {
+        .menu__left > a {
+          padding-right: 3rem;
+        }
+
+        .menu__right > a {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      padding: 0 5rem;
+
+      > .nav__link {
+        > .logo {
+          width: 70%;
+        }
+      }
+
+      > .main__menu {
+        .menu__left > a {
+          font-size: 1.2rem;
+          padding-right: 3rem;
+        }
+
+        .menu__right > a {
+          font-size: 1.2rem;
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      padding: 0 4rem;
+
+      > .nav__link {
+        > .logo {
+          width: 60%;
+        }
+      }
+
+      > .main__menu {
+        > button {
+          display: block;
+        }
+
+        .menu__left,
+        .menu__right {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    height: $height-navbar-respon;
+    &__content {
+      padding: 0 2rem;
     }
   }
 }

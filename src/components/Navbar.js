@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../assets/images/logo.svg";
+import { VscThreeBars } from "react-icons/vsc";
 
-const Navbar = () => {
+const Navbar = ({ showMenuHandler }) => {
   return (
     <nav className="navbar">
       <div className="navbar__content">
@@ -10,6 +11,9 @@ const Navbar = () => {
         </a>
 
         <div className="main__menu">
+          <button onClick={showMenuHandler}>
+            <VscThreeBars />
+          </button>
           <div className="menu__left">
             <a href="##">Introduction</a>
             <a href="##">solution</a>

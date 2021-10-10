@@ -1,0 +1,8 @@
+.main {
+  position: relative;
+  top: $height-navbar;
+
+  @media (max-width: 540px) {
+    top: $height-navbar-respon;
+  }
+}

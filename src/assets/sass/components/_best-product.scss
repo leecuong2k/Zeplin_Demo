@@ -1,0 +1,237 @@
+.best__product {
+  .product__suggest {
+    background-color: $supernova;
+    background-image: url("../../images/bes-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0 15rem;
+
+    .heading {
+      margin-bottom: 10rem;
+      > .title {
+        @include title-section(center, $blaze-orange);
+      }
+
+      > p {
+        @include description($blaze-orange, 70rem);
+      }
+    }
+
+    .product__show {
+      .product__item {
+        position: relative;
+        height: 50rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        > img {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translateY(-50%);
+          object-fit: cover;
+        }
+
+        > .caption {
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 75%;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 50%);
+          background-color: $white-color;
+          border: solid 3px $diesel;
+          padding: 1.5rem;
+
+          > span {
+            font-size: 2rem;
+            line-height: 1.6;
+            font-weight: 800;
+            color: $mine-shaft;
+          }
+
+          > a {
+            display: block;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+              &::before {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba($cod-gray, $alpha: 0.5);
+              border-radius: 50%;
+              opacity: 0;
+              visibility: hidden;
+            }
+
+            > img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .product__suggest {
+      .product__show {
+        padding: 0 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .product__suggest {
+      .product__show {
+        padding: 0;
+        .grid.wide {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .product__suggest {
+      .product__show {
+        padding: 0;
+        .product__item {
+          margin-bottom: 15rem;
+          > .caption {
+            width: 70%;
+            > span {
+              font-size: 1.4rem;
+            }
+
+            > a {
+              > img {
+                width: 80%;
+                margin: 0 auto;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .product__suggest {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .heading {
+        padding: 0 3rem;
+        > .title {
+          font-size: 2rem;
+          letter-spacing: 1px;
+          margin-bottom: 1rem;
+        }
+
+        > p {
+          font-size: 1.4rem;
+          width: auto;
+          line-height: 1.6;
+        }
+      }
+
+      .product__show {
+        .product__item {
+          margin: 0 1.5rem;
+          margin-bottom: 15rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .product__suggest {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .heading {
+        padding: 0 3rem;
+        > .title {
+          font-size: 2rem;
+          letter-spacing: 1px;
+          margin-bottom: 1rem;
+        }
+
+        > p {
+          font-size: 1.4rem;
+          width: auto;
+          line-height: 1.6;
+        }
+      }
+
+      .product__show {
+        .product__item {
+          height: 30rem;
+          margin: 0 1.5rem;
+          margin-bottom: 15rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .product__suggest {
+      .heading {
+        padding: 0 1rem;
+        > .title {
+          font-size: 2rem;
+          letter-spacing: 1px;
+        }
+
+        > p {
+          font-size: 1.2rem;
+          width: auto;
+          line-height: 1.6;
+        }
+      }
+
+      .product__show {
+        .product__item {
+          > .caption {
+            width: 80%;
+            padding: 1rem;
+            > span {
+              font-size: 1rem;
+            }
+
+            > a {
+              > img {
+                width: 70%;
+                margin: 0 auto;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin title-section($position, $color) {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  text-align: $position;
+  text-transform: uppercase;
+  color: $color;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+@mixin description($color, $width) {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: $color;
+  margin: 0 auto;
+  width: $width;
+}

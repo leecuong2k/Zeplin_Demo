@@ -1,0 +1,26 @@
+.product__list {
+  padding: 10rem 0;
+  overflow-x: hidden;
+
+  .btn_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  @media (max-width: 1550px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (max-width: 1280px) {
+    padding-left: 0;
+    padding-right: 0;
+
+    > .grid.wide {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}

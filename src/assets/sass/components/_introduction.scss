@@ -1,0 +1,112 @@
+.introduction {
+  background-color: $mariner;
+  background-image: url("../../images/introduction-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+  &__content {
+    height: 100%;
+    padding: 20rem 5rem;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .intro__title {
+      @include title-section(left, "");
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 2rem;
+      width: 66.7rem;
+      line-height: 1.75;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    &__content {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      padding: 10rem 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      padding: 5rem 0;
+
+      .intro__title {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+    &__content {
+      padding: 5rem 0;
+
+      .intro__title {
+        @include title-section(center, "");
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        text-align: center;
+        width: auto;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    &__content {
+      padding: 3rem 0;
+      .intro__title {
+        @include title-section(center, "");
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        width: auto;
+        text-align: center;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    &__content {
+      .intro__title {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        width: auto;
+        text-align: center;
+        line-height: 1.6;
+      }
+    }
+  }
+}

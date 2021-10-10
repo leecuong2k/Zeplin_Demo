@@ -1,0 +1,253 @@
+.happened__section {
+  background-color: $white-color;
+  padding: 10rem 0 35rem;
+  position: relative;
+  overflow-x: hidden;
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 24rem;
+  }
+
+  .happened__title {
+    margin-bottom: 5rem;
+    > h2 {
+      @include title-section(center, $cod-gray);
+    }
+
+    > p {
+      @include description(center, 70rem);
+    }
+
+    > .btn__more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+  }
+
+  .happened__center {
+    position: relative;
+
+    > .happened__img {
+      position: relative;
+      z-index: 10;
+      > img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+      }
+    }
+
+    .video__object {
+      img {
+        position: absolute;
+      }
+
+      img:nth-child(1) {
+        bottom: -24rem;
+        left: 34rem;
+        z-index: 1;
+      }
+
+      img:nth-child(2) {
+        right: 65rem;
+        bottom: -12rem;
+      }
+
+      img:nth-child(3) {
+        left: 21rem;
+        bottom: -7rem;
+      }
+
+      img:nth-child(4) {
+        top: -18rem;
+        left: -33rem;
+      }
+
+      img:nth-child(5) {
+        right: 25rem;
+        top: -18rem;
+        z-index: 1;
+      }
+
+      img:nth-child(6) {
+        right: 14rem;
+        top: -29rem;
+      }
+
+      img:nth-child(7) {
+        right: -20rem;
+        bottom: -15rem;
+        z-index: 1;
+      }
+
+      img:nth-child(8) {
+        top: 18rem;
+        right: -17rem;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    > img {
+      left: 18rem;
+    }
+
+    .happened__center {
+      > .happened__img {
+        > img {
+          width: 85%;
+        }
+      }
+
+      .video__object {
+        img:nth-child(1) {
+          bottom: -25rem;
+          left: 14rem;
+        }
+
+        img:nth-child(2) {
+          right: 50rem;
+        }
+
+        img:nth-child(3) {
+          left: 2rem;
+          bottom: -12rem;
+        }
+
+        img:nth-child(4) {
+          top: -16rem;
+          left: -5rem;
+          width: 15%;
+        }
+
+        img:nth-child(5) {
+          right: 5rem;
+          top: -27rem;
+        }
+
+        img:nth-child(6) {
+          right: 10rem;
+          top: -38rem;
+        }
+
+        img:nth-child(7) {
+          right: -4rem;
+          bottom: -12rem;
+          width: 15%;
+        }
+
+        img:nth-child(8) {
+          top: 20rem;
+          right: -10rem;
+          width: 18%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    > img {
+      width: 10%;
+      left: 5rem;
+    }
+
+    .happened__title {
+      > h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      > p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        width: 50rem;
+      }
+
+      > .btn__more {
+        > button {
+          width: 12rem;
+          font-size: 1.4rem;
+          height: 4rem;
+        }
+      }
+    }
+
+    .happened__center {
+      .video__object {
+        img:nth-child(6) {
+          width: 10%;
+          right: 2rem;
+          top: -34rem;
+        }
+
+        img:nth-child(5) {
+          right: -2rem;
+          top: -30rem;
+          width: 10%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    padding-bottom: 10rem;
+    .happened__title {
+      > h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      > p {
+        font-size: 1.2rem;
+        line-height: 2;
+        width: 35rem;
+      }
+    }
+
+    .happened__center {
+      .video__object {
+        img:nth-child(1) {
+          width: 15%;
+          bottom: -5rem;
+          left: 7rem;
+        }
+
+        img:nth-child(2) {
+          right: 20rem;
+          width: 10%;
+          bottom: -7rem;
+        }
+
+        img:nth-child(3) {
+          width: 10%;
+          bottom: -4rem;
+        }
+
+        img:nth-child(7) {
+          bottom: 0rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .happened__title {
+      > h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+      }
+
+      > p {
+        font-size: 1rem;
+        line-height: 2;
+        width: 25rem;
+      }
+    }
+  }
+}
