@@ -15,7 +15,7 @@ Here is the demo link for this project [Link](https://zeplin-demo.netlify.app/).
 
 
 
-### `npm run eject`
+*Let's take a quick look at this product.*
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
