@@ -1,25 +1,25 @@
 import React from "react";
-import itemImg1 from "../assets/images/img-01.png";
+import { NavLink } from "react-router-dom";
 import iconHeart from "../assets/images/hearticon.png";
 
-const ProductItem = () => {
+const ProductItem = ({ item }) => {
   return (
     <div className="col l-2-4 m-6 c-12">
-      <a href="###" className="item">
+      <NavLink to="###" className="item">
         <div className="item__img">
-          <img src={itemImg1} alt="" />
+          <img src={item.img} alt="" />
         </div>
         <div className="item__info">
-          <h4>[what happen] How to create</h4>
+          <h4>{item.title}</h4>
           <div className="detail">
-            <span>2,500 won</span>
+            <span>{item.price} won</span>
             <p>
               <img src={iconHeart} alt="" />
-              236
+              {item.like}
             </p>
           </div>
         </div>
-      </a>
+      </NavLink>
     </div>
   );
 };

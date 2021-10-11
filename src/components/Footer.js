@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import snsIcon1 from "../assets/images/snsicon-01.png";
 import snsIcon2 from "../assets/images/snsicon-02.png";
 import snsIcon3 from "../assets/images/snsicon-03.png";
@@ -13,11 +14,19 @@ const Footer = () => {
               <div className="top__left">
                 <h2>what happened</h2>
                 <div>
-                  <a href="##">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
-                  <a href="##">[공지] 29CM 강남 스토어 영업 종료</a>
-                  <a href="##">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
-                  <a href="##">[공지] iOS 10 이하 버전 지원 중단 안내 </a>
-                  <a href="##">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
+                  <NavLink to="##">
+                    [공지] 개인 정보 처리 방침 변경 사전 안내
+                  </NavLink>
+                  <NavLink to="##">[공지] 29CM 강남 스토어 영업 종료</NavLink>
+                  <NavLink to="##">
+                    [공지] 개인 정보 처리 방침 변경 사전 안내
+                  </NavLink>
+                  <NavLink to="##">
+                    [공지] iOS 10 이하 버전 지원 중단 안내{" "}
+                  </NavLink>
+                  <NavLink to="##">
+                    [공지] 개인 정보 처리 방침 변경 사전 안내
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -30,9 +39,9 @@ const Footer = () => {
                       <h4>about us</h4>
 
                       <div>
-                        <a href="##">회사 소개</a>
-                        <a href="##">인재 채용</a>
-                        <a href="##">상시 할인 혜택</a>
+                        <NavLink to="##">회사 소개</NavLink>
+                        <NavLink to="##">인재 채용</NavLink>
+                        <NavLink to="##">상시 할인 혜택</NavLink>
                       </div>
                     </div>
                   </div>
@@ -40,11 +49,11 @@ const Footer = () => {
                     <div className="right__item">
                       <h4>my order</h4>
                       <div>
-                        <a href="##">내 주문</a>
-                        <a href="##">주문 배송 </a>
-                        <a href="##">취소 / 교환 / 반품 내역</a>
-                        <a href="##">상품 리뷰 내역</a>
-                        <a href="##">증빙 서류 발급</a>
+                        <NavLink to="##">내 주문</NavLink>
+                        <NavLink to="##">주문 배송 </NavLink>
+                        <NavLink to="##">취소 / 교환 / 반품 내역</NavLink>
+                        <NavLink to="##">상품 리뷰 내역</NavLink>
+                        <NavLink to="##">증빙 서류 발급</NavLink>
                       </div>
                     </div>
                   </div>
@@ -53,10 +62,10 @@ const Footer = () => {
                       <h4>my account</h4>
 
                       <div>
-                        <a href="##">회원 정보 수정</a>
-                        <a href="##">인재 채용</a>
-                        <a href="##">마일리지 현황</a>
-                        <a href="##">쿠폰</a>
+                        <NavLink to="##">회원 정보 수정</NavLink>
+                        <NavLink to="##">인재 채용</NavLink>
+                        <NavLink to="##">마일리지 현황</NavLink>
+                        <NavLink to="##">쿠폰</NavLink>
                       </div>
                     </div>
                   </div>
@@ -64,11 +73,11 @@ const Footer = () => {
                     <div className="right__item">
                       <h4>help</h4>
                       <div>
-                        <a href="##">1 : 1 상담 내역</a>
-                        <a href="##">상품 Q & A 내역</a>
-                        <a href="##">공지 사항</a>
-                        <a href="##">자주하는 질문</a>
-                        <a href="##">고객의 소리</a>
+                        <NavLink to="##">1 : 1 상담 내역</NavLink>
+                        <NavLink to="##">상품 Q & A 내역</NavLink>
+                        <NavLink to="##">공지 사항</NavLink>
+                        <NavLink to="##">자주하는 질문</NavLink>
+                        <NavLink to="##">고객의 소리</NavLink>
                       </div>
                     </div>
                   </div>
@@ -95,17 +104,17 @@ const Footer = () => {
             <div className="col l-4 m-4 c-12">
               <div className="bottom__right">
                 <div>
-                  <a href="##">
+                  <NavLink to="##">
                     <img src={snsIcon1} alt="" />
-                  </a>
+                  </NavLink>
 
-                  <a href="##">
+                  <NavLink to="##">
                     <img src={snsIcon2} alt="" />
-                  </a>
+                  </NavLink>
 
-                  <a href="##">
+                  <NavLink to="##">
                     <img src={snsIcon3} alt="" />
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

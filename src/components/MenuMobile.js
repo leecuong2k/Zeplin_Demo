@@ -1,5 +1,6 @@
 import React from "react";
-import { MdClose, MdRunCircle } from "react-icons/md";
+import { MdClose } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 import snsIcon1 from "../assets/images/snsicon-01.png";
 import snsIcon2 from "../assets/images/snsicon-02.png";
 import snsIcon3 from "../assets/images/snsicon-03.png";
@@ -31,28 +32,28 @@ const MenuMobile = ({ isShow, setIsShow }) => {
 
         <div className="content__center">
           <div className="menu__list">
-            <a href="##">Introduction</a>
-            <a href="##">Solution</a>
-            <a href="##">Rate plan</a>
-            <a href="##">Login</a>
-            <a href="##">Apply for free use</a>
+            <NavLink to="##">Introduction</NavLink>
+            <NavLink to="##">Solution</NavLink>
+            <NavLink to="##">Rate plan</NavLink>
+            <NavLink to="##">Login</NavLink>
+            <NavLink to="##">Apply for free use</NavLink>
           </div>
         </div>
 
         <div className="content__bottom">
           <h4>Contact</h4>
           <div className="contact">
-            <a href="##">
+            <NavLink to="##">
               <img src={snsIcon1} alt="" />
-            </a>
+            </NavLink>
 
-            <a href="##">
+            <NavLink to="##">
               <img src={snsIcon2} alt="" />
-            </a>
+            </NavLink>
 
-            <a href="##">
+            <NavLink to="##">
               <img src={snsIcon3} alt="" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

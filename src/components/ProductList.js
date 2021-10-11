@@ -1,36 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
+import ProductData from "../data/product.json";
 
 const ProductList = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(ProductData);
+  }, []);
   return (
     <div className="product__list">
       <div className="grid wide">
         <div className="row">
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
+          {data?.map((item, index) => {
+            return <ProductItem key={index} item={item} />;
+          })}
         </div>
       </div>
 

@@ -7,6 +7,7 @@ import product2 from "../assets/images/best-image-02.png";
 import product3 from "../assets/images/best-image-03.png";
 import iconGo from "../assets/images/go-icon.png";
 import ProductList from "./ProductList";
+import { NavLink } from "react-router-dom";
 
 const BestProduct = () => {
   return (
@@ -30,9 +31,9 @@ const BestProduct = () => {
                   <img src={icon1} alt="" />
                   <div className="caption">
                     <span>How to create mobile-optimized</span>
-                    <a href="###">
+                    <NavLink to="###">
                       <img src={iconGo} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -44,9 +45,9 @@ const BestProduct = () => {
                   <img src={icon2} alt="" />
                   <div className="caption">
                     <span>How to create mobile-optimized</span>
-                    <a href="###">
+                    <NavLink to="###">
                       <img src={iconGo} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -58,9 +59,9 @@ const BestProduct = () => {
                   <img src={icon3} alt="" />
                   <div className="caption">
                     <span>How to create mobile-optimized</span>
-                    <a href="###">
+                    <NavLink to="###">
                       <img src={iconGo} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>

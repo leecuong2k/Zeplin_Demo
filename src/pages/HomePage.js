@@ -6,20 +6,10 @@ import Footer from "../components/Footer";
 import Happened from "../components/Happened";
 import Introduction from "../components/Introduction";
 import Issue from "../components/Issue";
-import MenuMobile from "../components/MenuMobile";
-import Navbar from "../components/Navbar";
 
 const HomePage = () => {
-  const [isShow, setIsShow] = useState(false);
-
-  const showMenuHandler = () => {
-    return !isShow ? setIsShow(true) : setIsShow(false);
-  };
-
   return (
     <>
-      <MenuMobile isShow={isShow} setIsShow={setIsShow} />
-      <Navbar showMenuHandler={showMenuHandler} isShow={isShow} />
       <div className="main">
         <Banner />
         <Introduction />
@@ -28,7 +18,6 @@ const HomePage = () => {
         <Issue />
         <Happened />
       </div>
-      <Footer />
     </>
   );
 };
