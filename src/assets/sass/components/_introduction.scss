@@ -30,6 +30,15 @@
     &__content {
       padding-top: 10rem;
       padding-bottom: 10rem;
+
+      .intro__title {
+        @include title-section(center, "");
+      }
+
+      p {
+        width: auto;
+        text-align: center;
+      }
     }
   }
 
