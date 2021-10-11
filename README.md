@@ -15,7 +15,7 @@ Here is the demo link for this project [Link](https://zeplin-demo.netlify.app/).
 
 
 
-** - Let's take a quick look at this product.**
+  - Let's take a quick look at this product.
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
